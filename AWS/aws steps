@@ -1,0 +1,26 @@
+>AWS >modules >sandbox environment >lab
+>click on aws and search for ec2 and click on that
+>click on instances on the left side panel
+>click on launch instance and give a name to it
+>In application and Os images choose windows
+>select microsoft windows server 2019 base in amazon machine image
+>create a new key pair also name it
+>click on launch instance
+>In the instances page copy the public Ip address
+>under security group name under security tab
+>click on add inbound rule 
+> choose HTTP in second tab,click on source and select myIP and save rules
+>in the windows open Run and enter mstsc
+>in AWS click on connect>RDP client>Download remote desktop site
+>Get password>upload private keyfile
+>Copy the decrypted password 
+>paste the password in mstsc 
+>windows key>servermanager
+>add roles and features >next >Role based installation
+>next >select a servers from the serverpool
+>next >select webserver[IIS]>addfeatures 
+>next >next >install
+>file explorer >localdisk >inetpub <wwwroot >hear create webpage[index.html]
+>open anew incognito window on source pc
+>search the auto assigned ip in search bar
+>Then the Http page created will be opened
