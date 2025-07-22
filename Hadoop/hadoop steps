@@ -1,0 +1,10 @@
+on windows desktop create folder named Input and put all the 3 files mapperDoc.py, reducerDoc.py and INPUTFILE.txt
+open cloudera ->terminal
+>su
+>cd workspace
+>mkdir InputFiles
+>mount -t vboxsf Input /home/cloudera/workspace/InputFiles
+
+new terminal 
+>cat doc.txt|./mapperDoc.py
+>cat doc.txt|./mapperDoc.py|./reducerDoc.py
