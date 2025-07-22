@@ -1,0 +1,8 @@
+>sudo docker pull cassandra:latest
+>sudo docker network create cassandralab3
+>sudo docker run --rm -d --name cassandralab3 --hostname cassandra --network cassandralab3 cassandra
+>sudo docker run 0it --network cassandralab3 --rm cassandra cqlsh cassabdralab3
+
+>CREATE KEYSPACE IF NOT EXISTS store WITH REPLICATION = {'class':'SimpleStrategy','replication_factor':'1'};
+>use store;
+>CREATE TABLE IF NOT EXISTS shopping_cart(userid text PRIMARY KEY, item_count int, last_update_timestamp timestamp);
