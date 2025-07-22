@@ -1,0 +1,24 @@
+AWS academy >modules >sandbox >launch sandbox
+>startlab >AWS >Search rds >Select Aurora and RDS >Databases
+>create database
+>easy create >mysql >Sandbox
+>set master password >create database
+>click on database name (rds-database-demo)
+>copy endpoint and save it in notepad
+
+>click on modify >connectivity >additionalConfig
+>select publicly accessible >continue >modufyDBinstance
+>once status is available
+>click on dbname (rds-database-demo)
+>click on security -> VPC Security groups
+>click on security group id >edit inbound rules
+>Type ->MYSQL/Aurora
+>Source ->MYIP >Save Rules
+
+Now open SQLectron >add >paste the thing copied in notepad in serveraddress
+>database type -> MYSQL >user ->rdsdatabase
+>Password >Save >connect 
+
+>create database test;
+>execute ->connect
+>test -> here create table
